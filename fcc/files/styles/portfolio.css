@@ -1,0 +1,53 @@
+@media (max-width:1400px){
+    #welcome-section{
+        height: 100vh;
+        background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9Jhw__fmT4SpQWReVKY89Ojq1bHM-G6zHtg&usqp=CAU);
+        background-size: cover;
+        background-repeat: no-repeat;
+        display: grid;
+        grid-template-columns: repeat (2, 25% 60% );
+        font-size: 10px;
+        line-height: 5px;
+    }
+    #welcome-section h1{
+        padding-top: 40%;
+        font-family: cursive;
+        height: 100vh;
+    }
+
+    h1{
+        font-family: cursive;
+        font-size: 30px;
+    }
+    h2{
+        font-size: 30px;
+    }
+    p{
+        font-family: cursive;
+        font-size: 20px;
+    }
+    body{
+        background-color: rgba(255, 228, 196, 0.527);
+    }
+    
+    .project-grid{
+        display: grid;
+        grid-template-columns: repeat (4, 1fr);
+    }
+    #welcome-section div{
+    display: grid;
+    grid-template-columns: repeat (2, 30% 60% );
+    }
+    nav{
+        display: flex;
+        flex-direction: row;
+        justify-content: end;
+        padding-left: 80%;
+        position: sticky;
+        left: 0;
+        right: 0;
+        top: 0;
+        gap: 3em;
+
+    }
+    }

@@ -1,0 +1,92 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+     color: rgba(24, 23, 23, 0.548);
+}
+
+#welcome-section h1,p{
+    color: rgba(0, 0, 0, 0.575);
+    font-size: 35px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+#welcome-section p{
+    font-size: 20px;
+}
+
+#part1{
+    background-color: rgba(192, 192, 192, 0.192);
+    padding-top: 10px;
+    
+}
+
+
+#part1 ul{
+    list-style-type: none;
+}
+
+abbr{
+    text-decoration: none;
+}
+
+#part2 h2{
+    background-color: silver;
+}
+
+#part1 p{
+   
+    font-style: italic;
+    line-height: 2px;
+}
+
+#part2{
+    padding-left: 10%;
+}
+
+header{
+
+    border-bottom: 30px ridge tomato;
+    border-bottom-color: tomato;
+    border-image: repeating-linear-gradient(-70deg, tomato, white,tomato 10px 30px) 90;
+  
+}
+#p{
+    font-style: italic;
+}
+aside p{
+    color: black;
+    font-size: 15px;
+    text-transform: inherit;
+    text-align: justify;
+}
+
+#status{
+    display: grid;
+    grid-template-columns: repeat(2, 30% 60%);
+    border-bottom: 20px solid tomato;
+    border-bottom-color: tomato;
+    
+}
+.skills li:first-of-type {
+    border-right: 200px solid tomato;
+    margin-bottom: 1em;
+    height: 0.70em;
+}
+.skills li:last-of-type{
+    border-right: 100px solid tomato;
+    margin-bottom: 1em;
+    height: 0.70em;
+
+}
+.skills li:nth-of-type(2) {
+    border-right: 150px solid tomato;
+    margin-bottom: 1em;
+    height: 0.70em;
+
+}
+.skills li:nth-of-type(3){
+    border-right: 170px solid tomato;
+    margin-bottom: 1em;
+    height: 0.70em;
+
+}
