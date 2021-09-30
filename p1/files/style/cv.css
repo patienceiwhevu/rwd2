@@ -30,7 +30,9 @@ abbr{
 }
 
 #part2 h2{
-    background-color: silver;
+    background-color: rgba(192, 192, 192, 0.603);
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 #part1 p{
