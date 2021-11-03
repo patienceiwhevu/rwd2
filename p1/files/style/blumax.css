@@ -1,0 +1,120 @@
+header{
+    display: flex;
+    flex-direction: row;
+    left: 0;
+    right: 0;
+    top: 0;
+    padding-left: 5%;
+}
+
+.header-img{
+    max-width: 7%;
+}
+
+h1{
+    font-size: 25px;
+}
+
+.nav-bar{
+    display: grid;
+    display: flex;
+    flex-direction: row;
+    padding-left: 30%;
+    grid-template-columns: repeat(3, 1fr );
+    gap: 3em;
+    margin-top: 2em;
+    text-transform: uppercase;
+    
+}
+
+.nav-link{
+    color: white;
+   
+}
+
+i{
+    color: black;
+}
+
+#welcome-section{
+    background: linear-gradient(120deg, rgba(15, 15, 230, 0.829) 20%, red 70%);
+    height: 90vh;
+    gap: 5em;
+    color: white;
+    padding-left: 2em;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.div{
+    font-size: 20px;
+    text-align: center;
+    padding-top: 3em;
+}
+.div h2{
+    text-align: center;
+    font-size: 70px;
+}
+.div button{
+    background-color: black;
+    color: white;
+    border: none;
+    width: 60px;
+}
+#sec2{
+    background-color: rgb(70, 5, 70);
+    gap: 3em;
+    font-size: 20px;
+    line-height: 2;
+    color: white;
+    margin-top: -50px;
+}
+#grid{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 4em;
+}
+#text h2{
+    text-align: center;
+    font-size: 50px;
+    padding-top: 150px;
+}
+#text p{
+    text-align: center;
+    margin-bottom: 90px;
+}
+#sec2 button{
+    color: white;
+    background-color: red;
+    width: 80px;
+    margin-left: 90%;
+    border: none;
+}
+#buss{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-top: 50px;
+}
+#smart{
+    color: black;
+    margin-left: 20px;
+    margin-right: 20px;
+    background-color: white;
+    height: 40vh;
+    text-align: center;
+}
+#pro{
+    color: black;
+    margin-left: 20px;
+    margin-right: 20px;
+    background-color: blue;
+    height: 40vh;
+    text-align: center;
+}
+#inter{
+    color: black;
+    margin-left: 20px;
+    margin-right: 20px;
+    background-color: white;
+    height: 40vh;
+    text-align: center;
+}
