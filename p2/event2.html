@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <title>Events: Task 2</title>
+    <style>
+      p {
+        color: purple;
+        margin: 0.5em 0;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      canvas {
+        border: 1px solid black;
+      }
+    </style>
+  </head>
+
+  <body>
+
+    <section class="preview">
+    </section>
+
+    <canvas width="480" height="320" tabindex="0">
+
+    </canvas>
+
+
+  </body>
+  <script>
+    let canvas = document.querySelector('canvas');
+    let ctx = canvas.getContext('2d');
+
+    function drawCircle(x, y, size) {
+      ctx.fillStyle = 'white';
+      ctx.fillRect(0, 0, canvas.width, canvas.height);
+
+      ctx.beginPath();
+      ctx.fillStyle = 'black';
+      ctx.arc(x, y, size, 0, 2 * Math.PI);
+      ctx.fill();
+    }
+
+    let x = 50;
+    let y = 50;
+    let size = 30;
+
+    drawCircle(x, y, size);
+
+    // Add your code here
+
+    document.addEventListener('keydown', function moveCircle(e) {
+      const keyName = e.key;
+
+      switch (keyName) {
+        case 'w':
+          y-=3;
+          size++;
+          break;
+          
+          case 's':
+            y+=5;
+            size--;
+          break;
+      
+          case 'a':
+            x-=5;
+            size--;
+            break;
+            
+            case 'd':
+              x+=5;
+              size++;
+          break;
+        default:
+          x+=0;
+          y+=0;
+      
+      }
+      drawCircle(x, y, size);
+    })
+ // canvas.focus();
+  /*  window.onkeypress = function(e) {
+      if(e.key === 'a'){
+       x >= 5;
+     } else if (e.key === 'd'){
+        x >= 5;
+      } else if (e.key === 'w'){
+        y >= 5;
+      } else if (e.key === 's'){
+        y >= 5;
+      }
+      
+    }
+    drawCircle(x, y, size);
+       
+    
+*/
+  </script>
+
+</html>

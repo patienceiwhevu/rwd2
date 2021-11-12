@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <title>Object basics: Task 2</title>
+    <style>
+      p {
+        color: purple;
+        margin: 0.5em 0;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+    </style>
+  </head>
+
+  <body>
+
+    <section class="preview">
+
+
+
+    </section>
+
+  </body>
+  <script>
+    let bandInfo;
+
+    // Add your code here
+    let band = {
+  name: 'Westlife',
+  nationality: 'Irish',
+  genre: 'pop',
+  members: 4,
+  formed:1998,
+  split:false,
+  album: [
+        {
+            name:'Westlife',
+            released:1999
+        },
+        {
+            name:'coast to coast',
+            released:2000
+        },
+        {
+            name:'World of our own',
+            released:2001
+        },
+        {
+            name:'Unbreakable',
+            released:2002
+        },
+        {
+            name:'Turn around',
+            released:2003
+        },
+        {
+            name:'Allow us to be frank',
+            released:2003
+        },
+        {
+            name:'Face to face',
+            released:2005
+        },
+        {
+            name:'The love album',
+            released:2006
+        },
+
+        {
+            name:'Back home',
+            released:2007
+        },
+        {
+            name:'Where we are',
+            released:2009
+        },
+        {
+            name:'Gravity',
+            released:2010
+        },
+        {
+            name:'Greatest hits',
+            released:2011
+        },
+        {
+            name:'Spectrum',
+            released:2019
+        },
+        {
+            name:'Wild dreams',
+            released:2021
+        }
+]
+  
+};
+
+bandInfo = `My favourite ${band.genre} band is ${band.name} of the ${band.nationality} origin. They
+have been active since ${band.formed}, their first album ${band.album[0].name} was released in ${
+  band.album[0].released}.`
+
+    // Don't edit the code below here!
+
+    const section = document.querySelector('section');
+    let para1 = document.createElement('p');
+    para1.textContent = bandInfo;
+    section.appendChild(para1);
+  </script>
+
+</html>

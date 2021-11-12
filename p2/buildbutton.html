@@ -12,42 +12,64 @@
             text-align: center;
             padding-top: 25px;
         }
+        h1{
+            font-size: 30px;
+
+            padding: 20px;
+        }
+        p{
+            padding: 20px;
+
+        }
     </style>
     <h1>Diamond in the Rough</h1>
     <p>Many individuals have, like uncut diamonds, shining qualities beneath a rough exterior</p> 
     <button  class="lower">lowercase</button>
     <button class="upper">uppercase</button>
     <button class="capital">capitalize</button>
+
  
     <script>
+        
+
         const lower =  document.querySelector('.lower')
         const upper =  document.querySelector('.upper')
         const capital =  document.querySelector('.capital')
         const heading = document.querySelector('h1')
 
+        
         function toLower() {
             heading.style.textTransform = 'lowercase'
             heading.style.color = 'salmon'
-            heading.style.backgroundColor = ' rgba(255, 228, 196, 0.527)'
-            heading.style.padding = '20px'
+            heading.style.backgroundColor = 'rgb(240, 72, 166)'
+           
         
         }
         
         function toUpper() {
             heading.style.textTransform = 'uppercase'
-            heading.style.color = 'tomato'
+            heading.style.color = 'green'
+            heading.style.backgroundColor = 'salmon'
+            
             
         }
 
         function toCapitalize() {
-           heading.style.textTransform = 'capitalize'
-           heading.style.color = 'yellow'
+           heading.style.textTransform = 'capitalize'             
+           heading.style.color = 'blue'
+           heading.style.backgroundColor = 'aqua'
+
         }
+
+
+
+
 
         
         lower.onclick = toLower
         upper.onclick = toUpper
         capital.onclick = toCapitalize
+
 
 
     </script>
