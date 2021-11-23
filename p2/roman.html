@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roman numeral</title>
+</head>
+<body>
+    <script>
+        function convertToRoman(num) {
+  let units =  ['','i','ii','iii','iv','v','vi','vii','viii','ix'];
+  let tens = ['','x','xx','xxx','xl','l','lx','lxx','lxxx','xc'];
+  let hundreds = ['','c','cc','ccc','cd','d','dc','dcc','dccc','md'];
+  let thousands = ['','d','dd','ddd','dddd','v'];
+  
+  num = num.toString();
+  if(num.length === 4){
+    let th = thousands[num[0]];
+    let h = hundreds[num[1]];
+    let t = tens[num[2]];
+    let u = units[num[3]]
+    num = th + h + t + u;
+    num = num.toUpperCase();
+  }
+  
+  else if(num.length === 2){
+      let t = tens[num[0]];
+      let u = units[num[1]];
+      num = t + u;
+      num = num.toUpperCase();
+    }
+    
+    else if(num.length === 3){
+        let h = hundreds[num[0]];
+        let t = tens[num[1]];
+        let u = units[num[2]];
+        num = h + t + u;
+        num = num.toUpperCase();
+    }
+    else{
+      num = units[num[0]];
+      num = num.toUpperCase();
+    }
+
+
+ return num;
+}
+
+convertToRoman(36);
+    </script>
+</body>
+</html>
